@@ -1,8 +1,6 @@
 # 🚀 VCF: Vibe Coding Fridays
 
-**Exploring the Future of AI-Powered Development**
-
-Welcome to Vibe Coding Fridays - a collaborative journey into AI-enhanced software development! Every Friday, we dive deep into cutting-edge AI coding tools, techniques, and workflows while building real solutions for high-performance computing and AI research.
+Welcome to Vibe Coding Fridays - a collaborative space into AI-enhanced software development! Every Friday, we dive deep into cutting-edge AI coding tools, techniques, and workflows while building real solutions for high-performance computing and AI research.
 
 ## 🎯 Mission
 
@@ -87,28 +85,17 @@ docker run -it -v $(pwd):/workspace vcf-dev
 
 ## 🎯 Current Focus: Scifon-MCP
 
-Our primary project is **Scifon-MCP** - an MCP (Model Context Protocol) server that acts as intelligent memory and storage for AI-assisted HPC workflows. Think of it as a smart clipboard that understands scientific computing contexts.
-
-**Key Features in Development**:
-- AI-enhanced data persistence and retrieval
-- HPC-specific data type understanding
-- Multi-user collaborative memory spaces
-- Integration with popular HPC tools and workflows
+Our primary project is **Scifon-MCP** - an MCP (Model Context Protocol) server that acts as intelligent memory and storage for AI-assisted developers. Think of it as a smart clipboard that understands scientific computing contexts.
 
 ## 🤝 Contributing
 
 We welcome collaboration! Whether you're part of our core team or joining as an external collaborator:
 
-1. **Join our community**: Get access to [GRC Zulipchat](https://grc.zulipchat.com/)
-2. **Attend sessions**: Fridays 10am-1pm CDT (hybrid participation welcome)
-3. **Share discoveries**: Document your AI coding breakthroughs
-4. **Experiment boldly**: This is a learning-first environment
-
-## 🔗 Links
-
-- **Communication**: [GRC Zulipchat](https://grc.zulipchat.com/)
-- **Main Project**: [Iowarp NSF Project](https://github.com/grc-iit/iowarp)
-- **Session Schedule**: See `/sessions/` directory for detailed agendas
+1. **Join our community**: Get access to [GRC Zulipchat](https://grc.zulipchat.com/join/huzcpefq3dfkg3rvkvpnsbsz/)
+2. **Attend sessions**: Fridays 10am-1pm CDT online at [Google Meet](https://calendar.app.google/fZWGoeaVTKu2BPmZ6)
+3. **Share discoveries**: Document your AI coding breakthroughs on [Gnosis Github](https://github.com/grc-iit/vcf/)
+4. **Experiment boldly**: This is a learning-first environment. There are no right answers!
+5. **Session Schedule**: See `/sessions/` directory for detailed agendas
 
 ## 📝 License
 
