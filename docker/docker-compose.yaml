@@ -1,0 +1,23 @@
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devcontainer
+    volumes:
+      - ../:/workspace
+    stdin_open: true
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+      - "3000:3000"
+      - "5000:5000"
+    tty: true
+    ipc: host
+    shm_size: "48gb"
+    group_add:
+      - video
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined
