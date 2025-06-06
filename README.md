@@ -63,24 +63,50 @@ Transform how we think about programming by mastering human-AI collaboration in 
 ## 🛠️ Getting Started
 
 ### Prerequisites
-- Docker Desktop
-- VS Code with Copilot Pro
-- UV package manager: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-- Access to [GRC Zulipchat](https://grc.zulipchat.com/)
+- Docker Desktop or Docker
+- VS Code with Remote-Containers extension (recommended)
+- Git
+- Access to [GRC Zulipchat](https://grc.zulipchat.com/join/huzcpefq3dfkg3rvkvpnsbsz/)
 
-### Quick Setup
+### Quick Setup - Option 1: Pre-built Container (Recommended)
+```bash
+# Pull the VCF development container
+docker pull akougkas/vcf-dev:latest
+
+# Clone the repository
+git clone https://github.com/grc-iit/vcf.git
+cd vcf
+
+# Run the development container
+docker run -it -v $(pwd):/workspace akougkas/vcf-dev:latest
+
+# Inside the container, prepare the environment
+./scripts/session-prep.sh
+```
+
+### Quick Setup - Option 2: VS Code Dev Container
 ```bash
 # Clone the repository
 git clone https://github.com/grc-iit/vcf.git
 cd vcf
 
-# Initialize development environment
-uv init
-uv add --dev pytest ruff black
+# Open in VS Code
+code .
 
-# Setup Docker development container
-docker build -t vcf-dev .
-docker run -it -v $(pwd):/workspace vcf-dev
+# When prompted, select "Reopen in Container"
+# VS Code will automatically build/pull the container
+```
+
+### Quick Setup - Option 3: Local Development
+```bash
+# Clone the repository
+git clone https://github.com/grc-iit/vcf.git
+cd vcf
+
+# Install dependencies locally (requires Python 3.11+)
+pip install uv
+uv sync
+./scripts/session-prep.sh
 ```
 
 ## 🎯 Current Focus: Scifon-MCP
